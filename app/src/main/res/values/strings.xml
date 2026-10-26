@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">AETHONE</string>
+    <string name="widget_small">AETHONE – Toggle</string>
+    <string name="widget_medium">AETHONE – Status</string>
+    <string name="widget_large">AETHONE – Status &amp; Speed</string>
+
+    <!-- Notification -->
+    <string name="notif_channel_status">VPN status</string>
+    <string name="notif_channel_status_desc">Shows the connection status, timer and live speed</string>
+    <string name="notif_channel_alerts">Alerts</string>
+    <string name="notif_channel_alerts_desc">Kill-switch events and core problems</string>
+    <string name="notif_action_disconnect">Disconnect</string>
+    <string name="notif_action_connect">Connect</string>
+    <string name="notif_action_settings">Settings</string>
+    <string name="notif_title_connecting">Connecting…</string>
+    <string name="notif_title_connected">Connected</string>
+    <string name="notif_title_disconnected">Disconnected</string>
+    <string name="notif_title_error">Connection problem</string>
+    <string name="notif_kill_switch">Kill switch: internet blocked</string>
+    <string name="notif_kill_switch_desc">The tunnel dropped unexpectedly. Traffic was blocked so nothing leaked. Tap to reopen.</string>
+
+    <!-- Generic -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="close">Close</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="export">Export</string>
+    <string name="import_">Import</string>
+    <string name="reset">Reset</string>
+    <string name="search">Search</string>
+    <string name="none">None</string>
+    <string name="default_">Default</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="seconds_unit">s</string>
+    <string name="apply_and_reconnect">Apply &amp; reconnect</string>
+    <string name="changed_settings_hint">Settings changed – reconnect to apply</string>
+
+    <!-- Home -->
+    <string name="home_connecting">CONNECTING…</string>
+    <string name="home_disconnecting">DISCONNECTING…</string>
+    <string name="home_error">ERROR</string>
+    <string name="home_reconnect_hint">Tap to connect</string>
+    <string name="home_location_unknown">UNKNOWN</string>
+    <string name="home_warp_on">WARP ON</string>
+
+    <!-- Protocol picker -->
+    <string name="protocol_title">Protocol</string>
+    <string name="protocol_masque">MASQUE</string>
+    <string name="protocol_masque_desc">Hides the tunnel inside ordinary HTTPS traffic. Best against heavy filtering.</string>
+    <string name="protocol_wireguard">WIREGUARD</string>
+    <string name="protocol_wireguard_desc">Fast and lightweight. Use when the network is less aggressive.</string>
+    <string name="protocol_gool">GOOL</string>
+    <string name="protocol_gool_desc">WireGuard inside a MASQUE tunnel – different exit IP, more resistance.</string>
+    <string name="protocol_gool_classic">GOOL CLASSIC</string>
+    <string name="protocol_gool_classic_desc">WireGuard inside WireGuard. Different exit IP, highest latency.</string>
+    <string name="protocol_mim">MIM</string>
+    <string name="protocol_mim_desc">MASQUE inside MASQUE – when a single tunnel keeps exiting in the wrong country.</string>
+    <string name="protocol_tor">TOR</string>
+    <string name="protocol_tor_desc">Tor through the tunnel – maximum anonymity, slower.</string>
+    <string name="protocol_tor_reverse">TOR REVERSE</string>
+    <string name="protocol_tor_reverse_desc">The tunnel through Tor. The network never sees WARP (TCP only).</string>
+    <string name="protocol_tor_only">TOR ONLY</string>
+    <string name="protocol_tor_only_desc">Plain Tor without WARP. Exit is a Tor exit node.</string>
+    <string name="protocol_psiphon">PSIPHON (BETA)</string>
+    <string name="protocol_psiphon_desc">Experimental Psiphon transport built into the core.</string>
+
+    <!-- Settings root -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_connection">Connection</string>
+    <string name="settings_section_connection_desc">Protocol, endpoint scan and obfuscation</string>
+    <string name="settings_section_routing">Routing &amp; rules</string>
+    <string name="settings_section_routing_desc">Iran bypass, ad blocking and custom rules</string>
+    <string name="settings_section_apps">Apps</string>
+    <string name="settings_section_apps_desc">Choose which apps use the tunnel</string>
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_section_appearance_desc">Theme and language</string>
+    <string name="settings_section_features">Features</string>
+    <string name="settings_section_features_desc">Kill switch, auto-connect and notifications</string>
+    <string name="settings_section_advanced">Advanced settings</string>
+    <string name="settings_section_advanced_desc">Every core option, simplified for humans</string>
+    <string name="settings_section_diagnostics">Diagnostics</string>
+    <string name="settings_section_diagnostics_desc">Live core log, identity and updates</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_section_about_desc">Versions, licenses and credits</string>
+
+    <!-- Connection settings -->
+    <string name="conn_protocol">Protocol</string>
+    <string name="conn_scan_mode">Endpoint scan</string>
+    <string name="conn_scan_turbo">Turbo</string>
+    <string name="conn_scan_turbo_desc">Fastest – stops at the first working endpoint</string>
+    <string name="conn_scan_balanced">Balanced</string>
+    <string name="conn_scan_balanced_desc">Collects a few endpoints and keeps the fastest (recommended)</string>
+    <string name="conn_scan_thorough">Thorough</string>
+    <string name="conn_scan_thorough_desc">Sweeps whole ranges – when everything looks blocked</string>
+    <string name="conn_scan_stealth">Stealth</string>
+    <string name="conn_scan_stealth_desc">Few probes at a time, for networks that detect scanning</string>
+    <string name="conn_scan_ironclad">Ironclad</string>
+    <string name="conn_scan_ironclad_desc">Full tunnel + real request per endpoint – the strictest check</string>
+    <string name="conn_obfuscation">Obfuscation (Noize)</string>
+    <string name="conn_noize_off">Off</string>
+    <string name="conn_noize_off_desc">Network does no inspection</string>
+    <string name="conn_noize_light">Light</string>
+    <string name="conn_noize_light_desc">Mild interference, lowest overhead</string>
+    <string name="conn_noize_balanced">Balanced</string>
+    <string name="conn_noize_balanced_desc">Good starting point (recommended)</string>
+    <string name="conn_noize_aggressive">Aggressive</string>
+    <string name="conn_noize_aggressive_desc">The handshake is being fingerprinted</string>
+    <string name="conn_quick_reconnect">Quick reconnect</string>
+    <string name="conn_quick_reconnect_desc">Reuse the last working endpoint instead of a new scan</string>
+
+    <!-- Routing -->
+    <string name="routing_title">Routing &amp; rules</string>
+    <string name="routing_mode">Routing mode</string>
+    <string name="routing_mode_global">Everything through the tunnel</string>
+    <string name="routing_mode_global_desc">All traffic leaves through WARP</string>
+    <string name="routing_mode_bypass_iran">Bypass Iran (recommended)</string>
+    <string name="routing_mode_bypass_iran_desc">Iranian sites, apps and IPs stay direct – banking and domestic services keep working with your real IP</string>
+    <string name="routing_mode_bypass_iran_ads">Bypass Iran + block ads</string>
+    <string name="routing_mode_bypass_iran_ads_desc">Same as above, plus ad and tracker blocking inside the tunnel</string>
+    <string name="routing_mode_custom">Custom rules only</string>
+    <string name="routing_mode_custom_desc">Only the rules you write below decide what happens</string>
+    <string name="routing_direct_rules">Direct rules</string>
+    <string name="routing_direct_rules_desc">Matching traffic goes out through your real connection</string>
+    <string name="routing_block_rules">Block rules</string>
+    <string name="routing_block_rules_desc">Matching connections are refused</string>
+    <string name="routing_add_rule">Add rule</string>
+    <string name="routing_rule_type">Type</string>
+    <string name="routing_type_domain">Domain (and subdomains)</string>
+    <string name="routing_type_full">Exact domain</string>
+    <string name="routing_type_keyword">Keyword</string>
+    <string name="routing_type_regexp">Regular expression</string>
+    <string name="routing_type_cidr">IP / CIDR</string>
+    <string name="routing_type_port">Port (e.g. 25 or 3000-3010)</string>
+    <string name="routing_type_private">Private / LAN / CGNAT</string>
+    <string name="routing_rule_value">Value</string>
+    <string name="routing_rule_hint_domain">example.ir</string>
+    <string name="routing_rule_hint_cidr">10.0.0.0/8</string>
+    <string name="routing_rule_hint_port">25 or 3000-3010</string>
+    <string name="routing_rule_hint_keyword">doubleclick</string>
+    <string name="routing_rule_hint_regexp">^ad[0-9]+</string>
+    <string name="routing_private_note">The private rule keeps local networks (LAN, hotspot, CGNAT) out of the tunnel.</string>
+    <string name="routing_iran_list_note">The Iran list bundles the official RIPE IP space (%1$s prefixes) plus ~200 domestic domains and is updated with the app.</string>
+    <string name="routing_bad_rule">That value does not look valid for this rule type</string>
+
+    <!-- Apps -->
+    <string name="apps_title">Apps</string>
+    <string name="apps_mode">Tunnel mode</string>
+    <string name="apps_mode_all">All apps (recommended)</string>
+    <string name="apps_mode_all_desc">Everything goes through the tunnel</string>
+    <string name="apps_mode_exclude">Exclude selected</string>
+    <string name="apps_mode_exclude_desc">Selected apps stay on the direct connection</string>
+    <string name="apps_mode_include">Only selected</string>
+    <string name="apps_mode_include_desc">Only the selected apps go through the tunnel</string>
+    <string name="apps_search_hint">Search apps…</string>
+    <string name="apps_selected">%1$d selected</string>
+
+    <!-- Appearance -->
+    <string name="appearance_title">Appearance</string>
+    <string name="appearance_theme">Theme</string>
+    <string name="appearance_theme_system">Follow system</string>
+    <string name="appearance_theme_light">Light</string>
+    <string name="appearance_theme_dark">Dark</string>
+    <string name="appearance_language">Language</string>
+    <string name="appearance_language_system">System</string>
+
+    <!-- Features -->
+    <string name="features_title">Features</string>
+    <string name="features_kill_switch">Kill switch</string>
+    <string name="features_kill_switch_desc">If the tunnel drops unexpectedly the VPN shuts down immediately so nothing leaks outside it</string>
+    <string name="features_kill_switch_hint">For a hardware-level guarantee also enable “Always-on VPN” and “Block connections without VPN” in system VPN settings.</string>
+    <string name="features_kill_switch_open_system">Open system VPN settings</string>
+    <string name="features_autostart">Connect on boot</string>
+    <string name="features_autostart_desc">Reconnect automatically after the phone restarts</string>
+    <string name="features_notification_stats">Show live speed in notification</string>
+    <string name="features_notification_stats_desc">Updates every two seconds while connected</string>
+
+    <!-- Advanced -->
+    <string name="advanced_title">Advanced settings</string>
+    <string name="advanced_endpoint">Endpoint</string>
+    <string name="advanced_peer">Fixed endpoint (ip:port)</string>
+    <string name="advanced_peer_desc">Skip the scan and use this endpoint, e.g. 162.159.196.1:443</string>
+    <string name="advanced_gool_peer">Gool inner endpoint (ip:port)</string>
+    <string name="advanced_wiw_outer">Gool-classic outer endpoint</string>
+    <string name="advanced_wiw_inner">Gool-classic inner endpoint</string>
+    <string name="advanced_mim_outer">Mim outer endpoint</string>
+    <string name="advanced_mim_inner">Mim inner endpoint</string>
+    <string name="advanced_carrier">MASQUE carrier</string>
+    <string name="advanced_carrier_h3">HTTP/3 (QUIC) – default</string>
+    <string name="advanced_carrier_h2">HTTP/2 (TCP 443) – when QUIC is blocked</string>
+    <string name="advanced_quic_v2">QUIC v2 opener</string>
+    <string name="advanced_quic_v2_desc">Helps when the filter blocks QUIC v1 but passes v2</string>
+    <string name="advanced_fragment">Fragment the TLS ClientHello</string>
+    <string name="advanced_fragment_desc">Splits the handshake so SNI readers get confused</string>
+    <string name="advanced_fragment_size">Fragment size (bytes)</string>
+    <string name="advanced_fragment_delay">Fragment delay (ms)</string>
+    <string name="advanced_dns_section">DNS</string>
+    <string name="advanced_dns_fake_ip">Fake-IP mode</string>
+    <string name="advanced_dns_fake_ip_desc">Answers DNS from a private pool and dials by domain – faster app launches</string>
+    <string name="advanced_dns_hijack">Hijack all DNS</string>
+    <string name="advanced_dns_hijack_desc">Captures DNS sent to any address and sends it through the tunnel</string>
+    <string name="advanced_network_section">Network</string>
+    <string name="advanced_ipv6">IPv6 inside the tunnel</string>
+    <string name="advanced_mtu">TUN MTU</string>
+    <string name="advanced_mtu_desc">8500 with offloads is fastest; set 1500 if a device misbehaves</string>
+    <string name="advanced_stack">TCP stack</string>
+    <string name="advanced_stack_userspace">Userspace (compatibility)</string>
+    <string name="advanced_stack_hybrid">Hybrid (faster, Android)</string>
+    <string name="advanced_upstream">Upstream proxy</string>
+    <string name="advanced_upstream_desc">Chain Aether behind another proxy, e.g. socks5://127.0.0.1:1080</string>
+    <string name="advanced_ech">Encrypted Client Hello (ECH)</string>
+    <string name="advanced_ech_desc">Hides the server name in the TLS handshake (auto-fetches the config)</string>
+    <string name="advanced_tls_section">TLS fingerprint</string>
+    <string name="advanced_tls_ciphers">TLS 1.2 ciphers</string>
+    <string name="advanced_tls13_ciphers">TLS 1.3 ciphers</string>
+    <string name="advanced_tls_groups">Groups</string>
+    <string name="advanced_tls_key_shares">Key shares</string>
+    <string name="advanced_tls_sigalgs">Signature algorithms</string>
+    <string name="advanced_tls_cert_compression">Certificate compression</string>
+    <string name="advanced_tls_alps">ALPS</string>
+    <string name="advanced_tls_masque_sni">MASQUE server name (SNI)</string>
+    <string name="advanced_tls_grease">GREASE values</string>
+    <string name="advanced_tls_grease_sigalgs">GREASE in signature algorithms</string>
+    <string name="advanced_tls_ocsp">OCSP stapling request</string>
+    <string name="advanced_tls_sct">Signed certificate timestamps</string>
+    <string name="advanced_tls_session_ticket">Session ticket extension</string>
+    <string name="advanced_tls_permutation">Extension permutation</string>
+    <string name="advanced_tls_verify">Verify gateway certificate</string>
+    <string name="advanced_zerotrust_section">Cloudflare Zero Trust</string>
+    <string name="advanced_team">Team name</string>
+    <string name="advanced_access_email">Access email</string>
+    <string name="advanced_access_id">Service token ID</string>
+    <string name="advanced_access_secret">Service token secret</string>
+    <string name="advanced_gateway">Send through Gateway proxy</string>
+    <string name="advanced_tor_section">Tor</string>
+    <string name="advanced_tor_bridges">Bridge lines</string>
+    <string name="advanced_tor_bridges_desc">One per line. Leave empty for automatic bridges (obfs4, webtunnel, snowflake)</string>
+    <string name="advanced_tor_country">Bridge country hint</string>
+    <string name="advanced_psiphon_section">Psiphon (experimental)</string>
+    <string name="advanced_psiphon_enable">Enable Psiphon transport</string>
+    <string name="advanced_psiphon_region">Preferred region</string>
+    <string name="advanced_proxy_section">Local proxies</string>
+    <string name="advanced_socks_port">SOCKS5 port</string>
+    <string name="advanced_http_proxy">HTTP CONNECT proxy</string>
+    <string name="advanced_http_proxy_desc">Also listens for apps that cannot speak SOCKS</string>
+    <string name="advanced_http_port">HTTP proxy port</string>
+    <string name="advanced_limits_section">Core limits</string>
+    <string name="advanced_route_sniff">Sniff hostnames for routing</string>
+    <string name="advanced_route_sniff_desc">Reads the TLS SNI / HTTP Host to match domain rules behind the tunnel</string>
+    <string name="advanced_sniff_ms">Sniff wait (ms)</string>
+    <string name="advanced_tcp_connect_timeout">Tunnel connect timeout (s)</string>
+    <string name="advanced_reprovision">Re-register blocked devices</string>
+    <string name="advanced_reprovision_desc">When Cloudflare rejects the identity, register a fresh one automatically</string>
+
+    <!-- Diagnostics -->
+    <string name="diag_title">Diagnostics</string>
+    <string name="diag_core_log">Live core log</string>
+    <string name="diag_core_log_desc">Aether and Zeptun output, newest last</string>
+    <string name="diag_copy_log">Copy log</string>
+    <string name="diag_identity">WARP identity</string>
+    <string name="diag_identity_desc">The registration file the core keeps in its private folder</string>
+    <string name="diag_identity_reset">Reset identity</string>
+    <string name="diag_identity_reset_confirm">Register a fresh device? The current identity will be deleted. The next connect will take longer.</string>
+    <string name="diag_core_version">Core versions</string>
+    <string name="diag_core_update">Check for core updates</string>
+    <string name="diag_core_update_desc">Compares the bundled binaries with the latest GitHub release</string>
+    <string name="diag_core_uptodate">Cores are up to date</string>
+    <string name="diag_core_update_found">New release found: %1$s</string>
+    <string name="diag_test_connection">Test the tunnel</string>
+    <string name="diag_test_desc">Fetches cloudflare.com/cdn-cgi/trace through the tunnel</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_version">App version</string>
+    <string name="about_cores">Aether %1$s · Zeptun %2$s</string>
+    <string name="about_licenses">Open-source licenses</string>
+    <string name="about_license_body">AETHONE is free software (AGPL-3.0).\n\n· Aether core – AGPL-3.0, CluvexStudio\n· Zeptun engine – MIT, Noisemux\n· Vazirmatn font – SIL OFL 1.1, Saber Rastikerdar\n\nThis app carries no warranty. Use it responsibly and obey the law of your jurisdiction.</string>
+    <string name="about_github">Source code on GitHub</string>
+
+    <!-- Errors -->
+    <string name="error_vpn_permission">The VPN permission was denied. AETHONE cannot start without it.</string>
+    <string name="error_core_missing">Core binaries are missing – reinstall the app or run “fetchCores”.</string>
+    <string name="error_core_start">The core failed to start. Check the log in Diagnostics.</string>
+    <string name="error_core_died">The core stopped unexpectedly.</string>
+    <string name="error_scan_timeout">No reachable endpoint was found. Try another protocol or scan mode.</string>
+    <string name="error_zeptun">The tun engine failed to start (%1$s).</string>
+
+    <!-- Accessibility -->
+    <string name="cd_connect_toggle">Connect or disconnect the VPN</string>
+    <string name="cd_theme_toggle">Toggle dark and light theme</string>
+    <string name="cd_settings">Open settings</string>
+    <string name="cd_protocol">Choose protocol</string>
+</resources>

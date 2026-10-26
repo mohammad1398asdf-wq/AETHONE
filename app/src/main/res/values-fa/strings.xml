@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_small">AETHONE – کلید اتصال</string>
+    <string name="widget_medium">AETHONE – وضعیت</string>
+    <string name="widget_large">AETHONE – وضعیت و سرعت</string>
+
+    <!-- Notification -->
+    <string name="notif_channel_status">وضعیت VPN</string>
+    <string name="notif_channel_status_desc">نمایش وضعیت اتصال، تایمر و سرعت لحظه‌ای</string>
+    <string name="notif_channel_alerts">هشدارها</string>
+    <string name="notif_channel_alerts_desc">رویدادهای کلید-قطع (Kill Switch) و مشکلات هسته</string>
+    <string name="notif_action_disconnect">قطع اتصال</string>
+    <string name="notif_action_connect">اتصال</string>
+    <string name="notif_action_settings">تنظیمات</string>
+    <string name="notif_title_connecting">در حال اتصال…</string>
+    <string name="notif_title_connected">متصل شدید</string>
+    <string name="notif_title_disconnected">قطع است</string>
+    <string name="notif_title_error">مشکل در اتصال</string>
+    <string name="notif_kill_switch">کلید قطع: اینترنت مسدود شد</string>
+    <string name="notif_kill_switch_desc">تونل به‌طور غیرمنتظره قطع شد. برای جلوگیری از لو رفتن ترافیک، همه‌چیز مسدود شد. برای بازگشت لمس کنید.</string>
+
+    <!-- Generic -->
+    <string name="ok">باشه</string>
+    <string name="cancel">لغو</string>
+    <string name="save">ذخیره</string>
+    <string name="add">افزودن</string>
+    <string name="delete">حذف</string>
+    <string name="edit">ویرایش</string>
+    <string name="close">بستن</string>
+    <string name="copy">کپی</string>
+    <string name="share">هم‌رسانی</string>
+    <string name="export">خروجی گرفتن</string>
+    <string name="import_">وارد کردن</string>
+    <string name="reset">بازنشانی</string>
+    <string name="search">جست‌وجو</string>
+    <string name="none">هیچ‌کدام</string>
+    <string name="default_">پیش‌فرض</string>
+    <string name="on">روشن</string>
+    <string name="off">خاموش</string>
+    <string name="seconds_unit">ثانیه</string>
+    <string name="apply_and_reconnect">اعمال و اتصال مجدد</string>
+    <string name="changed_settings_hint">تنظیمات تغییر کرد – برای اعمال، دوباره وصل شوید</string>
+
+    <!-- Home -->
+    <string name="home_connecting">در حال اتصال…</string>
+    <string name="home_disconnecting">در حال قطع…</string>
+    <string name="home_error">خطا</string>
+    <string name="home_reconnect_hint">برای اتصال لمس کنید</string>
+    <string name="home_location_unknown">نامشخص</string>
+    <string name="home_warp_on">WARP فعال است</string>
+
+    <!-- Protocol picker -->
+    <string name="protocol_title">پروتکل</string>
+    <string name="protocol_masque">MASQUE</string>
+    <string name="protocol_masque_desc">تونل را داخل ترافیک معمولی HTTPS پنهان می‌کند. بهترین گزینه مقابل فیلترینگ شدید.</string>
+    <string name="protocol_wireguard">WIREGUARD</string>
+    <string name="protocol_wireguard_desc">سریع و سبک. وقتی شبکه خلوت‌تر است بهترین انتخاب است.</string>
+    <string name="protocol_gool">GOOL</string>
+    <string name="protocol_gool_desc">وایرگارد داخل تونل MASQUE – آی‌پی خروجی متفاوت و مقاومت بیشتر.</string>
+    <string name="protocol_gool_classic">GOOL CLASSIC</string>
+    <string name="protocol_gool_classic_desc">وایرگارد داخل وایرگارد. آی‌پی خروجی متفاوت، تأخیر بیشتر.</string>
+    <string name="protocol_mim">MIM</string>
+    <string name="protocol_mim_desc">MASQUE داخل MASQUE – وقتی تونل تکی همیشه از کشور اشتباه خارج می‌شود.</string>
+    <string name="protocol_tor">TOR</string>
+    <string name="protocol_tor_desc">تور از داخل تونل – ناشناسی کامل، سرعت کمتر.</string>
+    <string name="protocol_tor_reverse">TOR REVERSE</string>
+    <string name="protocol_tor_reverse_desc">تونل از داخل تور. شبکه هرگز WARP را نمی‌بیند (فقط TCP).</string>
+    <string name="protocol_tor_only">TOR ONLY</string>
+    <string name="protocol_tor_only_desc">تور خالص بدون WARP. خروجی از گره‌های تور است.</string>
+    <string name="protocol_psiphon">PSIPHON (آزمایشی)</string>
+    <string name="protocol_psiphon_desc">ترنسپورت آزمایشی Psiphon ساخته‌شده در خود هسته.</string>
+
+    <!-- Settings root -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_section_connection">اتصال</string>
+    <string name="settings_section_connection_desc">پروتکل، اسکن نقطه اتصال و مخفی‌سازی</string>
+    <string name="settings_section_routing">روتینگ و قوانین</string>
+    <string name="settings_section_routing_desc">بایپس ایران، مسدودسازی تبلیغات و قوانین سفارشی</string>
+    <string name="settings_section_apps">برنامه‌ها</string>
+    <string name="settings_section_apps_desc">انتخاب برنامه‌هایی که از تونل استفاده می‌کنند</string>
+    <string name="settings_section_appearance">ظاهر</string>
+    <string name="settings_section_appearance_desc">تم و زبان برنامه</string>
+    <string name="settings_section_features">قابلیت‌ها</string>
+    <string name="settings_section_features_desc">کلید قطع، اتصال خودکار و اعلان‌ها</string>
+    <string name="settings_section_advanced">تنظیمات پیشرفته</string>
+    <string name="settings_section_advanced_desc">همه‌ی گزینه‌های هسته، به زبان آدمیزاد</string>
+    <string name="settings_section_diagnostics">عیب‌یابی</string>
+    <string name="settings_section_diagnostics_desc">لاگ زنده هسته، هویت و بروزرسانی</string>
+    <string name="settings_section_about">درباره</string>
+    <string name="settings_section_about_desc">نسخه‌ها، لایسنس‌ها و سپاسگزاری</string>
+
+    <!-- Connection settings -->
+    <string name="conn_protocol">پروتکل</string>
+    <string name="conn_scan_mode">اسکن نقطه اتصال</string>
+    <string name="conn_scan_turbo">توربو</string>
+    <string name="conn_scan_turbo_desc">سریع‌ترین – اولین نقطه سالم را برمی‌دارد</string>
+    <string name="conn_scan_balanced">متعادل</string>
+    <string name="conn_scan_balanced_desc">چند نقطه را می‌سنجد و سریع‌ترین را نگه می‌دارد (پیشنهادی)</string>
+    <string name="conn_scan_thorough">کامل</string>
+    <string name="conn_scan_thorough_desc">کل رنج‌ها را جارو می‌کند – وقتی همه‌چیز بلاک به نظر می‌رسد</string>
+    <string name="conn_scan_stealth">نامرئی</string>
+    <string name="conn_scan_stealth_desc">کمتر و آرام‌تر اسکن می‌کند؛ برای شبکه‌هایی که اسکن را تشخیص می‌دهند</string>
+    <string name="conn_scan_ironclad">آهنین</string>
+    <string name="conn_scan_ironclad_desc">تونل کامل و یک درخواست واقعی برای هر نقطه – سخت‌گیرانه‌ترین بررسی</string>
+    <string name="conn_obfuscation">سطح مخفی‌سازی (Noize)</string>
+    <string name="conn_noize_off">خاموش</string>
+    <string name="conn_noize_off_desc">شبکه هیچ بازرسی نمی‌کند</string>
+    <string name="conn_noize_light">سبک</string>
+    <string name="conn_noize_light_desc">اختلال کم، کمترین سربار</string>
+    <string name="conn_noize_balanced">متعادل</string>
+    <string name="conn_noize_balanced_desc">نقطه شروع خوب (پیشنهادی)</string>
+    <string name="conn_noize_aggressive">تهاجمی</string>
+    <string name="conn_noize_aggressive_desc">وقتی اثر انگشت هندشیک دارید</string>
+    <string name="conn_quick_reconnect">اتصال سریع</string>
+    <string name="conn_quick_reconnect_desc">به‌جای اسکن جدید از آخرین نقطه سالم استفاده می‌کند</string>
+
+    <!-- Routing -->
+    <string name="routing_title">روتینگ و قوانین</string>
+    <string name="routing_mode">حالت روتینگ</string>
+    <string name="routing_mode_global">همه‌چیز از تونل</string>
+    <string name="routing_mode_global_desc">کل ترافیک از WARP خارج می‌شود</string>
+    <string name="routing_mode_bypass_iran">بایپس ایران (پیشنهادی)</string>
+    <string name="routing_mode_bypass_iran_desc">سایت‌ها، برنامه‌ها و آی‌پی‌های ایرانی مستقیم می‌مانند – بانکداری و سرویس‌های داخلی با آی‌پی خودتان کار می‌کنند</string>
+    <string name="routing_mode_bypass_iran_ads">بایپس ایران + حذف تبلیغات</string>
+    <string name="routing_mode_bypass_iran_ads_desc">مثل حالت قبل، به‌علاوه مسدودسازی تبلیغات و ردیاب‌ها داخل تونل</string>
+    <string name="routing_mode_custom">فقط قوانین سفارشی</string>
+    <string name="routing_mode_custom_desc">فقط قوانینی که خودتان می‌نویسید تصمیم می‌گیرند</string>
+    <string name="routing_direct_rules">قوانین مستقیم (Direct)</string>
+    <string name="routing_direct_rules_desc">ترافیک منطبق از اتصال واقعی شما خارج می‌شود</string>
+    <string name="routing_block_rules">قوانین مسدود (Block)</string>
+    <string name="routing_block_rules_desc">اتصالات منطبق رد می‌شوند</string>
+    <string name="routing_add_rule">افزودن قانون</string>
+    <string name="routing_rule_type">نوع</string>
+    <string name="routing_type_domain">دامنه (با زیردامنه‌ها)</string>
+    <string name="routing_type_full">فقط همین دامنه</string>
+    <string name="routing_type_keyword">کلیدواژه</string>
+    <string name="routing_type_regexp">عبارت باقاعده (Regexp)</string>
+    <string name="routing_type_cidr">آی‌پی / CIDR</string>
+    <string name="routing_type_port">پورت (مثل 25 یا 3000-3010)</string>
+    <string name="routing_type_private">شبکه محلی / LAN / CGNAT</string>
+    <string name="routing_rule_value">مقدار</string>
+    <string name="routing_rule_hint_domain">example.ir</string>
+    <string name="routing_rule_hint_cidr">10.0.0.0/8</string>
+    <string name="routing_rule_hint_port">25 یا 3000-3010</string>
+    <string name="routing_rule_hint_keyword">doubleclick</string>
+    <string name="routing_rule_hint_regexp">^ad[0-9]+</string>
+    <string name="routing_private_note">قانون private شبکه‌های محلی (LAN، هات‌اسپات، CGNAT) را از تونل بیرون نگه می‌دارد.</string>
+    <string name="routing_iran_list_note">لیست ایران شامل فضای آی‌پی رسمی RIPE (%1$s پیشوند) و حدود دویست دامنه داخلی است و همراه برنامه بروزرسانی می‌شود.</string>
+    <string name="routing_bad_rule">این مقدار برای نوع قانون انتخابی معتبر به نظر نمی‌رسد</string>
+
+    <!-- Apps -->
+    <string name="apps_title">برنامه‌ها</string>
+    <string name="apps_mode">حالت تونل</string>
+    <string name="apps_mode_all">همه برنامه‌ها (پیشنهادی)</string>
+    <string name="apps_mode_all_desc">همه‌چیز از تونل عبور می‌کند</string>
+    <string name="apps_mode_exclude">استثنا برای انتخاب‌شده‌ها</string>
+    <string name="apps_mode_exclude_desc">برنامه‌های انتخابی مستقیم می‌مانند</string>
+    <string name="apps_mode_include">فقط انتخاب‌شده‌ها</string>
+    <string name="apps_mode_include_desc">فقط برنامه‌های انتخابی از تونل استفاده می‌کنند</string>
+    <string name="apps_search_hint">جست‌وجوی برنامه…</string>
+    <string name="apps_selected">%1$d برنامه انتخاب شده</string>
+
+    <!-- Appearance -->
+    <string name="appearance_title">ظاهر</string>
+    <string name="appearance_theme">تم</string>
+    <string name="appearance_theme_system">مثل سیستم</string>
+    <string name="appearance_theme_light">روشن</string>
+    <string name="appearance_theme_dark">تاریک</string>
+    <string name="appearance_language">زبان</string>
+    <string name="appearance_language_system">زبان سیستم</string>
+
+    <!-- Features -->
+    <string name="features_title">قابلیت‌ها</string>
+    <string name="features_kill_switch">کلید قطع خودکار (Kill Switch)</string>
+    <string name="features_kill_switch_desc">اگر تونل به‌طور غیرمنتظره قطع شود، VPN فوراً خاموش می‌شود تا چیزی بیرون از تونل لو نرود</string>
+    <string name="features_kill_switch_hint">برای تضمین سطح سیستم هم «VPN همیشه روشن» و «قطع اتصال بدون VPN» را در تنظیمات VPN گوشی فعال کنید.</string>
+    <string name="features_kill_switch_open_system">باز کردن تنظیمات VPN سیستم</string>
+    <string name="features_autostart">اتصال خودکار بعد از روشن شدن گوشی</string>
+    <string name="features_autostart_desc">بعد از ری‌استارت گوشی دوباره وصل می‌شود</string>
+    <string name="features_notification_stats">نمایش سرعت لحظه‌ای در اعلان</string>
+    <string name="features_notification_stats_desc">هر دو ثانیه هنگام اتصال بروزرسانی می‌شود</string>
+
+    <!-- Advanced -->
+    <string name="advanced_title">تنظیمات پیشرفته</string>
+    <string name="advanced_endpoint">نقطه اتصال</string>
+    <string name="advanced_peer">نقطه ثابت (ip:port)</string>
+    <string name="advanced_peer_desc">اسکن را رد می‌کند و از این نقطه استفاده می‌کند؛ مثل 162.159.196.1:443</string>
+    <string name="advanced_gool_peer">نقطه داخلی Gool (ip:port)</string>
+    <string name="advanced_wiw_outer">نقطه بیرونی Gool-Classic</string>
+    <string name="advanced_wiw_inner">نقطه داخلی Gool-Classic</string>
+    <string name="advanced_mim_outer">نقطه بیرونی Mim</string>
+    <string name="advanced_mim_inner">نقطه داخلی Mim</string>
+    <string name="advanced_carrier">حامل MASQUE</string>
+    <string name="advanced_carrier_h3">HTTP/3 (QUIC) – پیش‌فرض</string>
+    <string name="advanced_carrier_h2">HTTP/2 (TCP 443) – وقتی QUIC بلاک است</string>
+    <string name="advanced_quic_v2">اوپنر QUIC v2</string>
+    <string name="advanced_quic_v2_desc">وقتی فیلتر QUIC نسخه ۱ را می‌بندد اما نسخه ۲ را رد می‌کند کمک می‌کند</string>
+    <string name="advanced_fragment">تکه‌تکه کردن ClientHello</string>
+    <string name="advanced_fragment_desc">هندشیک را می‌شکند تا خواننده‌های SNI گیج شوند</string>
+    <string name="advanced_fragment_size">اندازه تکه (بایت)</string>
+    <string name="advanced_fragment_delay">فاصله بین تکه‌ها (میلی‌ثانیه)</string>
+    <string name="advanced_dns_section">DNS</string>
+    <string name="advanced_dns_fake_ip">حالت Fake-IP</string>
+    <string name="advanced_dns_fake_ip_desc">DNS را از یک استخر خصوصی جواب می‌دهد و با نام دامنه شماره می‌زند – باز شدن سریع‌تر برنامه‌ها</string>
+    <string name="advanced_dns_hijack">قبضه کردن همه DNSها</string>
+    <string name="advanced_dns_hijack_desc">DNS ارسالی به هر آدرسی را می‌گیرد و از تونل عبور می‌دهد</string>
+    <string name="advanced_network_section">شبکه</string>
+    <string name="advanced_ipv6">IPv6 داخل تونل</string>
+    <string name="advanced_mtu">MTU تونل</string>
+    <string name="advanced_mtu_desc">۸۵۰۰ با آفلود سریع‌تر است؛ اگر مشکلی دیدید ۱۵۰۰ بگذارید</string>
+    <string name="advanced_stack">پشته TCP</string>
+    <string name="advanced_stack_userspace">فضای کاربر (سازگاری)</string>
+    <string name="advanced_stack_hybrid">ترکیبی (سریع‌تر، اندروید)</string>
+    <string name="advanced_upstream">پروکسی زنجیره‌ای (Upstream)</string>
+    <string name="advanced_upstream_desc">Aether را پشت یک پروکسی دیگر اجر می‌کند؛ مثل socks5://127.0.0.1:1080</string>
+    <string name="advanced_ech">ECH (رمز کردن نام سرور)</string>
+    <string name="advanced_ech_desc">نام سرور را در هندشیک TLS پنهان می‌کند (کانفیگ را خودکار می‌گیرد)</string>
+    <string name="advanced_tls_section">اثر انگشت TLS</string>
+    <string name="advanced_tls_ciphers">سیفرهای TLS 1.2</string>
+    <string name="advanced_tls13_ciphers">سیفرهای TLS 1.3</string>
+    <string name="advanced_tls_groups">گروه‌ها (Groups)</string>
+    <string name="advanced_tls_key_shares">کی‌شیرها (Key shares)</string>
+    <string name="advanced_tls_sigalgs">الگوریتم‌های امضا</string>
+    <string name="advanced_tls_cert_compression">فشرده‌سازی گواهی</string>
+    <string name="advanced_tls_alps">ALPS</string>
+    <string name="advanced_tls_masque_sni">نام سرور MASQUE (SNI)</string>
+    <string name="advanced_tls_grease">مقادیر GREASE</string>
+    <string name="advanced_tls_grease_sigalgs">GREASE در الگوریتم‌های امضا</string>
+    <string name="advanced_tls_ocsp">درخواست OCSP stapling</string>
+    <string name="advanced_tls_sct">SCT (مهر زمان گواهی)</string>
+    <string name="advanced_tls_session_ticket">افزونه Session Ticket</string>
+    <string name="advanced_tls_permutation">جابه‌جایی تصادفی افزونه‌ها</string>
+    <string name="advanced_tls_verify">تأیید گواهی گیت‌وی</string>
+    <string name="advanced_zerotrust_section">Cloudflare Zero Trust</string>
+    <string name="advanced_team">نام تیم</string>
+    <string name="advanced_access_email">ایمیل Access</string>
+    <string name="advanced_access_id">شناسه توکن سرویس</string>
+    <string name="advanced_access_secret">راز توکن سرویس</string>
+    <string name="advanced_gateway">عبور از پروکسی Gateway سازمان</string>
+    <string name="advanced_tor_section">تور</string>
+    <string name="advanced_tor_bridges">خطوط پل (Bridge)</string>
+    <string name="advanced_tor_bridges_desc">هر خط یک پل. خالی بگذارید تا پل‌های خودکار (obfs4 و webtunnel و snowflake) امتحان شوند</string>
+    <string name="advanced_tor_country">کشور برای انتخاب پل</string>
+    <string name="advanced_psiphon_section">Psiphon (آزمایشی)</string>
+    <string name="advanced_psiphon_enable">فعال‌کردن ترنسپورت Psiphon</string>
+    <string name="advanced_psiphon_region">منطقه ترجیحی</string>
+    <string name="advanced_proxy_section">پروکسی‌های محلی</string>
+    <string name="advanced_socks_port">پورت SOCKS5</string>
+    <string name="advanced_http_proxy">پروکسی HTTP CONNECT</string>
+    <string name="advanced_http_proxy_desc">برای برنامه‌هایی که SOCKS بلد نیستند هم گوش می‌دهد</string>
+    <string name="advanced_http_port">پورت پروکسی HTTP</string>
+    <string name="advanced_limits_section">محدودیت‌های هسته</string>
+    <string name="advanced_route_sniff">خواندن نام دامنه برای روتینگ</string>
+    <string name="advanced_route_sniff_desc">SNI تی‌ال‌اس یا Host اچ‌تی‌تی‌پی را می‌خواند تا قوانین دامنه پشت تونل کار کنند</string>
+    <string name="advanced_sniff_ms">زمان انتظار شیف (میلی‌ثانیه)</string>
+    <string name="advanced_tcp_connect_timeout">مهلت اتصال تونل (ثانیه)</string>
+    <string name="advanced_reprovision">ثبت مجدد دستگاه‌های بلاک‌شده</string>
+    <string name="advanced_reprovision_desc">وقتی کلادفلر هویت را رد کند، خودکار یک هویت تازه ثبت می‌کند</string>
+
+    <!-- Diagnostics -->
+    <string name="diag_title">عیب‌یابی</string>
+    <string name="diag_core_log">لاگ زنده هسته</string>
+    <string name="diag_core_log_desc">خروجی Aether و Zeptun، جدیدترین در انتها</string>
+    <string name="diag_copy_log">کپی لاگ</string>
+    <string name="diag_identity">هویت WARP</string>
+    <string name="diag_identity_desc">فایل ثبت‌نامی که هسته در پوشه خصوصی خودش نگه می‌دارد</string>
+    <string name="diag_identity_reset">بازنشانی هویت</string>
+    <string name="diag_identity_reset_confirm">یک دستگاه تازه ثبت شود؟ هویت فعلی حذف می‌شود و اتصال بعدی طولانی‌تر خواهد بود.</string>
+    <string name="diag_core_version">نسخه هسته‌ها</string>
+    <string name="diag_core_update">بررسی بروزرسانی هسته</string>
+    <string name="diag_core_update_desc">باینری‌های داخل برنامه را با آخرین ریلیز گیت‌هاب مقایسه می‌کند</string>
+    <string name="diag_core_uptodate">هسته‌ها بروز هستند</string>
+    <string name="diag_core_update_found">ریلیز جدید پیدا شد: %1$s</string>
+    <string name="diag_test_connection">تست تونل</string>
+    <string name="diag_test_desc">درخواست cloudflare.com/cdn-cgi/trace از داخل تونل</string>
+
+    <!-- About -->
+    <string name="about_title">درباره</string>
+    <string name="about_version">نسخه برنامه</string>
+    <string name="about_cores">Aether %1$s · Zeptun %2$s</string>
+    <string name="about_licenses">لایسنس‌های متن‌باز</string>
+    <string name="about_license_body">AETHONE یک نرم‌افزار آزاد است (AGPL-3.0).\n\n· هسته Aether – AGPL-3.0، CluvexStudio\n· موتور Zeptun – MIT، Noisemux\n· فونت وزیرمتن – SIL OFL 1.1، صابر رستیکردار\n\nاین برنامه هیچ تضمینی ندارد. مسئولانه و مطابق قوانین محل زندگی‌تان استفاده کنید.</string>
+    <string name="about_github">سورس‌کد در گیت‌هاب</string>
+
+    <!-- Errors -->
+    <string name="error_vpn_permission">اجازه VPN داده نشد. AETHONE بدون آن نمی‌تواند شروع شود.</string>
+    <string name="error_core_missing">باینری هسته پیدا نمی‌شود – برنامه را دوباره نصب کنید یا fetchCores را اجرا کنید.</string>
+    <string name="error_core_start">هسته شروع نشد. لاگ بخش عیب‌یابی را ببینید.</string>
+    <string name="error_core_died">هسته به‌طور غیرمنتظره متوقف شد.</string>
+    <string name="error_scan_timeout">هیچ نقطه در دسترسی پیدا نشد. پروتکل یا حالت اسکن دیگری را امتحان کنید.</string>
+    <string name="error_zeptun">موتور تونل شروع نشد (%1$s).</string>
+
+    <!-- Accessibility -->
+    <string name="cd_connect_toggle">اتصال یا قطع VPN</string>
+    <string name="cd_theme_toggle">تغییر تم تاریک و روشن</string>
+    <string name="cd_settings">باز کردن تنظیمات</string>
+    <string name="cd_protocol">انتخاب پروتکل</string>
+</resources>

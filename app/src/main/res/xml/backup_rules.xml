@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- WARP identities contain private keys: never back them up -->
+    <exclude domain="file" path="core/home" />
+    <exclude domain="file" path="aethone_datastore.preferences_pb" />
+</full-backup-content>

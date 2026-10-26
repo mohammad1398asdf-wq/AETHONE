@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AETHONE brand mark: the two interlocking polygons of the launcher icon,
+     extracted pixel-exact from the original artwork (100x100 grid). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M 44.9,14.6 L 80.9,32.6 L 80.9,72.5 L 60.7,84.8 L 60.7,45.5 L 25.3,27.5 L 44.4,15.2 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M 38.8,41.0 L 38.8,58.4 L 53.4,66.9 L 34.8,79.2 L 18.5,71.3 L 18.5,53.4 L 38.2,41.6 Z" />
+</vector>
